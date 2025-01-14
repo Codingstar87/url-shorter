@@ -40,7 +40,7 @@ routes.get(
             email: user.email,
             name: user.userName, 
           },
-          
+          token
         });
         
         
