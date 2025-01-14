@@ -4,9 +4,9 @@ import protectRoute from "../middleware/protectRourte.js";
 
 const routes = Router()
 
-routes.get("/analytics/:alias" ,protectRoute,   analyticsAlias )
+routes.get("/analytics/:alias" ,   analyticsAlias )
 
-routes.get("/analytics/topic/:topic" ,protectRoute,   topic )
+routes.get("/analytics/topic/:topic" ,  topic )
 
 routes.get("/analytics" ,  overall)
 
