@@ -1,0 +1,21 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "src/index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "src/index.js"
+      }
+    ],
+    "env": {
+      "PORT": "3000",
+      "NODE_ENV": "production"
+    },
+    "framework": null
+  }
+  
