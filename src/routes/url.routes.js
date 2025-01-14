@@ -14,10 +14,10 @@ const limiter = rateLimit({
 const router = express.Router();
 
 
-router.post("/shorten", limiter, shortenUrl); 
+router.post("/shorten", limiter,protectRoute, shortenUrl); 
 
 
-router.get("/shorten/:alias", redirect_url)
+router.get("/shorten/:alias",protectRoute, redirect_url)
 
 // Export the router
 export default router;
