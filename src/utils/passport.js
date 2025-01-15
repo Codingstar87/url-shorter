@@ -11,7 +11,7 @@ passport.use(
     {
       clientID: process.env.CLIENT_ID,
       clientSecret: process.env.CLINT_SECRETE, // Fix typo in CLIENT_SECRET
-      callbackURL: "http://localhost:6543/api/auth/google/callback", 
+      callbackURL: "https://url-shorter-iota.vercel.app/api/auth/google/callback", 
     },
     async (accessToken, refreshToken, profile, done) => {
       try {
