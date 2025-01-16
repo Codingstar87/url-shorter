@@ -10,7 +10,7 @@ passport.use(
   new GoogleStrategy(
     {
       clientID: process.env.CLIENT_ID,
-      clientSecret: process.env.CLINT_SECRETE, // Fix typo in CLIENT_SECRET
+      clientSecret: process.env.CLINT_SECRETE, 
       callbackURL: "https://url-shorter-phi.vercel.app/api/auth/google/callback", 
     },
     async (accessToken, refreshToken, profile, done) => {
