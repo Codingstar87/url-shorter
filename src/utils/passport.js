@@ -11,7 +11,7 @@ passport.use(
     {
       clientID: process.env.CLIENT_ID,
       clientSecret: process.env.CLINT_SECRETE, 
-      callbackURL: "https://url-shorter-phi.vercel.app/api/auth/google/callback", 
+      callbackURL: "https://url-shorter-okfd.vercel.app/api/auth/google/callback", 
     },
     async (accessToken, refreshToken, profile, done) => {
       try {
