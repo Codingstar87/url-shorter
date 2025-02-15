@@ -14,7 +14,7 @@ const limiter = rateLimit({
 const router = express.Router();
 
 
-router.post("/shorten", limiter,protectRoute, shortenUrl); 
+router.post("/shorten", limiter, shortenUrl); 
 
 
 router.get("/shorten/:alias",protectRoute, redirect_url)
