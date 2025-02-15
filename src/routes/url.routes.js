@@ -17,7 +17,7 @@ const router = express.Router();
 router.post("/shorten", limiter, shortenUrl); 
 
 
-router.get("/shorten/:alias", redirect_url)
+router.get("/shorten/:alias",protectRoute, redirect_url)
 
 // Export the router
 export default router;
