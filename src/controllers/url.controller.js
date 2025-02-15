@@ -75,7 +75,7 @@ const shortenUrl = async (req, res) => {
 
     // Ensure no duplicate headers are sent in case of errors
     if (!res.headersSent) {
-      res.status(500).json({ message: "Internal Server Error" });
+      res.status(500).json({ message: " erroe in shortenUrl api" });
     }
   }
 };
